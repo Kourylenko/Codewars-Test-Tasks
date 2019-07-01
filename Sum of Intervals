@@ -1,0 +1,12 @@
+function sumIntervals(intervals){
+  //TODO
+  uniqueArr = [];
+  intervals.forEach(function(element) {
+    for  (var i = element[0]; i < element[1]; i++){
+      uniqueArr.push(i)
+    }
+  });
+  
+  uniqueArr = [...new Set(uniqueArr)];
+  return uniqueArr.length;
+}
